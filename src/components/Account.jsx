@@ -33,9 +33,9 @@ function Account() {
     return (
       <div
         style={styles.account}
-        onClick={() => authenticate({ signingMessage: "Hello World!" })}
+        onClick={() => authenticate({ signingMessage: "Decentralized Timeverse DeFi" })}
       >
-        <p style={styles.text}>Authenticate</p>
+        <p style={styles.text}>Connect</p>
       </div>
     );
   }
