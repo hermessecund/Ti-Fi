@@ -37,7 +37,7 @@ function Polls({ more }) {
     data: balance,
     nativeToken,
     isLoading,
-  } = useNativeBalance({ chain: "mumbai" });
+  } = useNativeBalance({ chain: "cronos" });
   const { isSaving, error, save, object } = useNewMoralisObject("Polls");
 
   // Setting answers to state to reload the component with each vote
