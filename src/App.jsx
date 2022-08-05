@@ -67,10 +67,7 @@ const App = ({ isServerInfo }) => {
                 <Main/>
             </Route>
             <Route path="/nonauthenticated">
-            <h3>Please login using the "Authenticate" button</h3><br>
-                  <svg version="1.1" viewBox="0 0 194.21 221" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M96.853 20.5l74.531 127.929L22.321 72.57 96.853 200.5l74.531-127.929L22.321 148.43 96.853 20.5z" fill="none" stroke="#000" stroke-width="10"/>
-                  </svg>
+            <h3>Please login using the "Authenticate" button</h3>
             </Route>
           </Switch>
           {isAuthenticated ? <Redirect to="/main" /> : <Redirect to="/nonauthenticated" />}
@@ -80,6 +77,8 @@ const App = ({ isServerInfo }) => {
   );
 };
 
-export const Logo = () => <h4>TiFi</h4>
+export const Logo = () =><svg version="1.1" viewBox="0 0 194.21 221" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M96.853 20.5l74.531 127.929L22.321 72.57 96.853 200.5l74.531-127.929L22.321 148.43 96.853 20.5z" fill="none" stroke="#000" stroke-width="10"/>
+                  </svg><h4>TiFi</h4>
 
 export default App;
